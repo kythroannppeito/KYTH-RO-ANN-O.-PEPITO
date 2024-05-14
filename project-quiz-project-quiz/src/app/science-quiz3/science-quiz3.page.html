@@ -1,0 +1,65 @@
+<!-- mathQuiz.page.html -->
+<ion-content>
+  <!-- Question 1 -->
+  <ion-card *ngIf="currentQuestion === 1">
+    <ion-card-header>
+      Question 1:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the chemical formula for table salt?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 1)">
+          H20
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 1)">
+          NaCI
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 1)">
+          Co2
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2">
+    <ion-card-header>
+      Question 2:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the study of the Earth's atmosphere and weather called?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 2)">
+          Geology
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 2)">
+          Meteorology
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 2)">
+          Astronomy
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3">
+    <ion-card-header>
+      Question 3:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the process by which plants release water vapor into the atmosphere called?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 3)">
+          Photosynthesis
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 3)">
+          Transpiration
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 3)">
+          Evaporation
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
